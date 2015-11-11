@@ -49,8 +49,8 @@ makeDot.prototype.setPosition = function() {
     var styleSettings = {
       'top': this.top,
       'left': this.left,
-      'border': '4px solid'+this.color,
-      'border-radius': '4px',
+      'border': '5px solid'+this.color,
+      'border-radius': '5px',
       'position': 'absolute',
       'z-index': -1,
     };
@@ -61,7 +61,7 @@ makeDot.prototype.setPosition = function() {
 $(document).ready(function(){
 
   setTimeout(function(){
-    for (var i = 0; i < 100; i++) {
+    for (var i = 0; i < 200; i++) {
       var Dot = new makeDot(
         $("body").height() / 2 ,
         $("body").width() / 2,
@@ -70,6 +70,10 @@ $(document).ready(function(){
       $('body').append(Dot.$node);    
     }
   }, 500);
+
+  setTimeout(function(){
+    $('.search').fadeIn('slow');
+  }, 1500)
 
 });
 
