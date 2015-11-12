@@ -75,7 +75,27 @@ $(document).ready(function(){
     $('.search').fadeIn('slow');
   }, 1500)
 
+
+  function startTime() {
+      var today = new Date();
+      var hour = today.getHours();
+      var min = today.getMinutes();
+      if (hour > 12) hour -= 12;
+      if (min < 10) min = '0' + min; 
+      $('h1').text(hour + ":" + min);
+      setTimeout(startTime, 500);
+  }
+
+  setTimeout(function(){
+    $('h1').text(startTime).fadeIn('slow');
+  }, 1500)
+
 });
+
+
+
+
+
 
 
 
