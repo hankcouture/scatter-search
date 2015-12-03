@@ -1,0 +1,46 @@
+body, html{
+  height:100%;
+  margin-top: 0px;
+}
+body{
+  margin: 0px;
+  background-color: #000033;
+  color: #B1B9C1;
+  text-align: center;
+}
+
+h1 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	color: #fff;
+	opacity: 0.7;
+	font-size: 3em;
+}
+
+.search {
+	display: none;
+	height: 50px;
+	width: 350px;
+	margin: 200px auto;
+	background-color: #fff;
+	border-radius: 8px;
+	border: 1px solid #DcDcDc;
+	padding: 10px;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+input {
+	border: none;
+	height: 100%;
+	width: 90%;
+	font-size: 1.5em;
+	font-weight: 300;
+	padding-left: 10px;
+	margin: auto;
+}
+
+input:focus {
+  outline: none;
+  transition: 0.25s;
+}
